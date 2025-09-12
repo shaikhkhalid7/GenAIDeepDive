@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv(override=True)
 
-llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.5)
-response = llm.invoke("Sing a ballad of LangChain. In 20 words")
+#model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.5)
+model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0.5)
+response = model.invoke("Sing a ballad of LangChain. In 20 words")
 print(response.content)
