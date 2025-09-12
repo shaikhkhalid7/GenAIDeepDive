@@ -1,7 +1,10 @@
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_ollama import ChatOllama
+from langchain_google_genai import ChatGoogleGenerativeAI
+from dotenv import load_dotenv
 
-model = ChatOllama(model="deepseek-r1:1.5b",temperature=0.5)
+load_dotenv(override=True)
+
+model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.5)
 prompt = ChatPromptTemplate.from_template("Tell me key achievments of {name}. In 2-3 sentences.")
 #chain = prompt | model
 #response = chain.invoke({"name":"Albert Einstein"})
