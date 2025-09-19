@@ -7,3 +7,6 @@
     langchain_ollama
     streamlit
     gradio
+    langchain-huggingface
+    huggingface_hub
+    
