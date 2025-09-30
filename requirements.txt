@@ -9,4 +9,10 @@
     gradio
     langchain-huggingface
     huggingface_hub
-    
+    transformers
+    torch
+    langchain
+    langchain_community
+    langchain-aws	
+    groq
+    langchain_groq
